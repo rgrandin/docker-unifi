@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+# Make the directory to be used for this container's data
+mkdir -p /data/unifi-controller
+
+chown -R dockeruser:dockeruser /data/unifi-controller

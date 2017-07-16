@@ -11,6 +11,8 @@
 #   3.  Run this file.
 
 
+# Update image data
+git pull
 
 
 
@@ -20,7 +22,8 @@ docker build -t unifi .
 
 # > ImageHash.txt
 
-HOST_DIR=/var/ubnt/container
+HOST_DIR=/data/unifi-controller
+
 
 # Create the container
 docker create \
