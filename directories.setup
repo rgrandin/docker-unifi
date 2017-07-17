@@ -2,6 +2,7 @@
 
 
 # Make the directory to be used for this container's data
-mkdir -p /data/unifi-controller
+mkdir -p /home/data/unifi-controller
 
-chown -R dockeruser:dockeruser /data/unifi-controller
+chown -R dockeruser:dockeruser /home/data/unifi-controller\
+chcon -Rt svirt_sandbox_file_t /home/data
